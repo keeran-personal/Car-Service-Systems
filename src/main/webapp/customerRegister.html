@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customer Registration</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #e9ecef;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        background-color: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        width: 350px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #343a40;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    td {
+        padding: 10px 0;
+        font-size: 16px;
+        color: #495057;
+    }
+
+    input[type="text"], 
+    input[type="password"],
+    input[type="email"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ced4da;
+        border-radius: 6px;
+        font-size: 16px;
+        box-sizing: border-box;
+        margin-top: 5px;
+        transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+        margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    input[type="submit"]:active {
+        background-color: #004085;
+        transform: scale(0.98);
+    }
+
+    /* Responsive Design for Mobile */
+    @media (max-width: 480px) {
+        form {
+            width: 100%;
+            padding: 20px;
+            box-shadow: none;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <form action="/Car-service-system/CustomerRegister">
+        <h2>Customer Registration</h2>
+        <table>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" name="name" required /></td>
+            </tr>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td><input type="text" id="username" name="username" required /></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" name="password" required /></td>
+            </tr>
+            <tr>
+                <td><label for="confirmpassword">Confirm Password</label></td>
+                <td><input type="password" id="confirmpassword" name="confirmpassword" required /></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email" required /></td>
+            </tr>  
+        </table>
+        <input type="submit" value="Register" />
+    </form>
+</body>
+</html>

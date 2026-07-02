@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Car Information Update</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .form-container {
+        width: 350px;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .form-container h2 {
+        text-align: center;
+        color: #333333;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 10px;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Update Car Details</h2>
+        <form action="/Car-service-system/">
+            <table>
+                <tr>
+                    <td>Old Car Number</td>
+                    <td><input type="text" name="oldcarnumber"></td>
+                </tr>
+                <tr>
+                    <td>Car Model</td>
+                    <td><input type="text" name="carmodel"></td>
+                </tr>
+                <tr>
+                    <td>Car Type</td>
+                    <td><input type="text" name="cartype"></td>
+                </tr>
+                <tr>
+                    <td>Car Number</td>
+                    <td><input type="text" name="carnumber"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

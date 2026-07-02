@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Service Request</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .form-container {
+        width: 400px;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .form-container h2 {
+        color: #333333;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-size: 14px;
+        color: #333333;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Service Request</h2>
+        <form action="/Car-service-system/ServiceRequest">
+            <label for="carnumber">Car Number</label>
+            <input type="text" id="carnumber" name="carnumber" required />
+
+            <label for="serviceRequest">Service Request</label>
+            <input type="text" id="serviceRequest" name="serviceRequest" required />
+
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>
