@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Details Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .form-container {
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+    }
+    h1 {
+        font-size: 22px;
+        text-align: center;
+        color: #4CAF50;
+        margin-bottom: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td {
+        padding: 10px;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Car Details</h1>
+    <form action="/Car-service-system/CarDetails">
+        <table>
+            <tr>
+                <td><label for="carmodel">Carmodel</label></td>
+                <td><input type="text" id="carmodel" name="carmodel"></td>
+            </tr>
+            <tr>
+                <td><label for="cartype">Cartype</label></td>
+                <td><input type="text" id="cartype" name="cartype"></td>
+            </tr>
+            <tr>
+                <td><label for="carnumber">CarNumber</label></td>
+                <td><input type="text" id="carnumber" name="carnumber"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
